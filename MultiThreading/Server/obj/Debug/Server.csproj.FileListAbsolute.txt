@@ -1,0 +1,6 @@
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\bin\Debug\Server.exe.config
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\bin\Debug\Server.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\bin\Debug\Server.pdb
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\obj\Debug\Server.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\obj\Debug\Server.pdb

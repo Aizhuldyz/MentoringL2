@@ -1,0 +1,5 @@
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\bin\Release\Server.exe.config
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\bin\Release\Server.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\bin\Release\Server.pdb
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\obj\Release\Server.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\Server\obj\Release\Server.pdb
