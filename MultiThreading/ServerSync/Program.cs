@@ -15,10 +15,8 @@ namespace ConsoleApplication2
         private static readonly Socket serviceSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         private static readonly Socket messageSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         private static readonly List<Socket> clientSockets = new List<Socket>();
-        private const int BUFFER_SIZE = 2048;
         private const int readPort = 5555;
         private const int writePort = 5556;
-        private static readonly byte[] buffer = new byte[BUFFER_SIZE];
         private static readonly int messageCount = 10;
         private static bool Stopped;
         private static Thread serviceThread;

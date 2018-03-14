@@ -1,0 +1,4 @@
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\ChatAPI\bin\Debug\ChatAPI.dll
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\ChatAPI\bin\Debug\ChatAPI.pdb
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\ChatAPI\obj\Debug\ChatAPI.dll
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\MultiThreading\ChatAPI\obj\Debug\ChatAPI.pdb
