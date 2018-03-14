@@ -41,9 +41,7 @@ namespace Client
         {
             Console.Title = "Client " + _client.Name;
             ServiceSocket.BeginConnect(IPAddress.Loopback, ServicePort, ConnectServiceCallback, null);
-            MessageSocket.BeginConnect(IPAddress.Loopback, MessagePort, ConnectMessageCallback, null);
-            Task.Factory.StartNew(MessageWriteCallback);
-            Task.Factory.StartNew(MessageReadCallback);
+
             Console.ReadLine();
             Exit();
         }
@@ -55,6 +53,7 @@ namespace Client
             try
             {
                 ServiceSocket.EndConnect(ar);
+                MessageSocket.BeginConnect(IPAddress.Loopback, MessagePort, ConnectMessageCallback, null);
             }
             catch (SocketException)
             {
@@ -81,6 +80,8 @@ namespace Client
             {
                 MessageSocket.EndConnect(ar);
                 Console.WriteLine("MessageSocket Connected");
+                Task.Factory.StartNew(MessageWriteCallback);
+                Task.Factory.StartNew(MessageReadCallback);
             }
             catch (SocketException)
             {
@@ -92,26 +93,23 @@ namespace Client
         {
             while (true)
             {
-                if (_client.Guid != Guid.Empty && MessageSocket.Connected)
+                var socketMessage = new SocketClient
                 {
-                    var socketMessage = new SocketClient
-                    {
-                        Name = _client.Name,
-                        Guid = _client.Guid,
-                        Message = new List<string>()
-                    };
-                    socketMessage.Message.Add(
-                        MessageList.ElementAt(new Random().Next(0, MessageList.Count - 1)));
-                    try
-                    {
-                        SocketCommands.Write(MessageSocket, socketMessage);
-                    }
-                    catch (SocketException)
-                    {
-                        Exit();
-                    }
-                    Thread.Sleep(BetweenMessagePauseTime);
+                    Name = _client.Name,
+                    Guid = _client.Guid,
+                    Message = new List<string>()
+                };
+                socketMessage.Message.Add(
+                    MessageList.ElementAt(new Random().Next(0, MessageList.Count - 1)));
+                try
+                {
+                    SocketCommands.Write(MessageSocket, socketMessage);
                 }
+                catch (SocketException)
+                {
+                    Exit();
+                }
+                Thread.Sleep(BetweenMessagePauseTime);
             }
         }
 
