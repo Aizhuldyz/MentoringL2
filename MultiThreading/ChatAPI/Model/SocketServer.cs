@@ -11,5 +11,6 @@ namespace ChatAPI.Model
     {
         public Socket Socket { get; set; }
         public SocketClient SocketClient { get; set; }
+        public byte[] Buffer { get; set; }
     }
 }

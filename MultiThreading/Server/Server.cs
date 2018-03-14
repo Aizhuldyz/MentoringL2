@@ -18,7 +18,7 @@ namespace Server
         private const int BufferSize = 2048;
         private const int ServicePort = 5555;
         private const int MessagePort = 5556;
-        private static readonly byte[] Buffer = new byte[BufferSize];
+
         private const int MessageCount = 10;
         private static FixedSizedQueue<string> _chatHistoryFixedSizedQueue = new FixedSizedQueue<string>(MessageCount);
 
@@ -43,23 +43,6 @@ namespace Server
             Console.WriteLine("Server setup complete");
         }
 
-        private static void AcceptMessageCallback(IAsyncResult ar)
-        {
-            Socket socket;
-
-            try
-            {
-                socket = MessageSocket.EndAccept(ar);
-            }
-            catch (ObjectDisposedException)
-            {
-                return;
-            }
-            socket.BeginReceive(Buffer, 0, BufferSize, SocketFlags.None, ReceiveCallback, socket);
-            MessageSocket.BeginAccept(AcceptMessageCallback, null);
-        }
-
-
 
         private static void AcceptServiceCallback(IAsyncResult ar)
         {
@@ -68,7 +51,7 @@ namespace Server
             try
             {
                 socket = ServiceSocket.EndAccept(ar);
-               
+
             }
             catch (ObjectDisposedException)
             {
@@ -82,51 +65,64 @@ namespace Server
         }
 
 
+        private static void AcceptMessageCallback(IAsyncResult ar)
+        {
+            Socket socket;
+
+            try
+            {
+                socket = MessageSocket.EndAccept(ar);
+            }
+            catch (ObjectDisposedException)
+            {
+                return;
+            }
+            var socketServer = new SocketServer
+            {
+                Buffer = new byte[BufferSize],
+                Socket = socket                
+            };
+            ClientSockets.Add(socketServer);
+            socket.BeginReceive(socketServer.Buffer, 0, BufferSize, SocketFlags.None, ReceiveCallback, socketServer);
+            MessageSocket.BeginAccept(AcceptMessageCallback, null);
+        }
+
+
         private static void ReceiveCallback(IAsyncResult ar)
         {
-            Socket current = (Socket)ar.AsyncState;
+            SocketServer current = (SocketServer)ar.AsyncState;
             int received;
 
             try
             {
-                received = current.EndReceive(ar);
+                received = current.Socket.EndReceive(ar);
             }
             catch (SocketException)
             {
                 Console.WriteLine("Client forcefully disconnected");
                 // Don't shutdown because the socket may be disposed and its disconnected anyway.
-                current.Close();
-                var index = ClientSockets.FindIndex(x => x.Socket == current);
+                current.Socket.Close();
+                var index = ClientSockets.FindIndex(x => x.Socket == current.Socket);
                 ClientSockets.RemoveAt(index);
                 return;
             }
             var data = new byte[received];
-            Array.Copy(Buffer, data, received);
-            var socketModel = (SocketClient)SocketCommands.ByteArrayToObject(data);
-            var socketServer = ClientSockets.FirstOrDefault(x => x.SocketClient.Guid == socketModel.Guid);
-            if (socketServer == null)
-            {
-                socketServer = new SocketServer
-                {
-                    Socket = current,
-                    SocketClient = socketModel
-                };
-                ClientSockets.Add(socketServer);
-            }
+            Array.Copy(current.Buffer, data, received);
+            var socketModel = (SocketClient)SocketCommands.ByteArrayToObject(data);            
             foreach (var message in socketModel.Message)
             {
-                _chatHistoryFixedSizedQueue.Enqueue(message);
+                _chatHistoryFixedSizedQueue.Enqueue(socketModel.Name + ": " + message);
             }
             foreach (var client in ClientSockets)
             {
-                if (client.Socket != current)
+                if (client.Socket != current.Socket)
                 {
                     var message = SocketCommands.ObjectToByteArray(socketModel);
                     client.Socket.Send(message);
                 }
 
             }
-            current.BeginReceive(Buffer, 0, BufferSize, SocketFlags.None, ReceiveCallback, current);
+            current.Socket.BeginReceive(current.Buffer, 0, BufferSize, SocketFlags.None, ReceiveCallback, current);
         }
 
 

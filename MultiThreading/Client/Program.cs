@@ -1,11 +1,8 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Net;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using ChatAPI.Command;
@@ -55,17 +52,15 @@ namespace Client
 
         private static void ConnectServiceCallback(IAsyncResult ar)
         {
-            while (!ServiceSocket.Connected)
+            try
             {
-                try
-                {
-                    ServiceSocket.EndConnect(ar);                   
-                }
-                catch (SocketException)
-                {
-                    Console.WriteLine("Connection was not established!");
-                }
+                ServiceSocket.EndConnect(ar);
             }
+            catch (SocketException)
+            {
+                Console.WriteLine("Connection was not established!");
+            }
+
             Console.WriteLine("ServiceSocket Connected");
             SocketCommands.Write(ServiceSocket, _client);
             while (_client.Guid == Guid.Empty)
@@ -74,28 +69,23 @@ namespace Client
                 _client.Guid = socketModel.Guid;
                 foreach (var message in socketModel.Message)
                 {
-                    Console.WriteLine(socketModel.Name + ":" + message);
+                    Console.WriteLine(message);
                 }
             }
-           
+
         }
 
         private static void ConnectMessageCallback(IAsyncResult ar)
         {
-            while (!MessageSocket.Connected)
+            try
             {
-                try
-                {
-                    MessageSocket.EndConnect(ar);
-                    Console.WriteLine("MessageSocket Connected");
-                }
-                catch (SocketException)
-                {
-                    Console.WriteLine("Connection was not established!");
-                }
-                            
+                MessageSocket.EndConnect(ar);
+                Console.WriteLine("MessageSocket Connected");
             }
-
+            catch (SocketException)
+            {
+                Console.WriteLine("Connection was not established!");
+            }
         }
 
         private static void MessageWriteCallback()
@@ -131,7 +121,7 @@ namespace Client
             {
                 if (_client.Guid != Guid.Empty && MessageSocket.Connected)
                 {
-                    
+
                     try
                     {
                         var socketModel = SocketCommands.Read(MessageSocket);
@@ -139,7 +129,7 @@ namespace Client
                         {
                             Console.WriteLine(socketModel.Name + ":" + message);
                         }
-                        
+
                     }
                     catch (SocketException)
                     {
@@ -162,6 +152,6 @@ namespace Client
             Environment.Exit(0);
         }
 
-        
+
     }
 }
