@@ -27,7 +27,7 @@ namespace HomeTask._1._1
             var lambdaExpressionTransformed = new LambdaParamVisitor().Modify(lambdaExpression, dictionary);
             new TraceExpressionVisitor().Visit(lambdaExpressionTransformed);
 
-            Console.WriteLine("Invoke Example: " + (Expression<Func<int, int>>)lambdaExpressionTransformed.Compile().DynamicInvoke());
+            Console.WriteLine("Invoke Example: " + lambdaExpressionTransformed.Compile().DynamicInvoke());
             Console.ReadLine();
         }
     }
