@@ -1,0 +1,5 @@
+C:\Users\aizhuldyz_gabbassova\Downloads\QandA\ManagedPowerManagement\bin\Debug\ManagedPowerManagement.dll
+C:\Users\aizhuldyz_gabbassova\Downloads\QandA\ManagedPowerManagement\bin\Debug\ManagedPowerManagement.pdb
+C:\Users\aizhuldyz_gabbassova\Downloads\QandA\ManagedPowerManagement\obj\Debug\ManagedPowerManagement.dll
+C:\Users\aizhuldyz_gabbassova\Downloads\QandA\ManagedPowerManagement\obj\Debug\ManagedPowerManagement.pdb
+C:\Users\aizhuldyz_gabbassova\Downloads\QandA\ManagedPowerManagement\obj\Debug\ManagedPowerManagement.csprojResolveAssemblyReference.cache
