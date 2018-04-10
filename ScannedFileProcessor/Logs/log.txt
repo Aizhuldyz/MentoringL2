@@ -1,0 +1,7 @@
+2018/04/10 18:58:27.652 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/10 18:58:27.772 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/10 18:58:27.861 Running as a console application, creating the console host. 
+2018/04/10 18:58:27.895 Starting up as a console application 
+2018/04/10 18:58:28.444 The ScannedFileProcessor service is now running, press Control+C to exit. 
