@@ -1,0 +1,62 @@
+Starting
+Created and configured Service Bus farm management database.
+Created and configured Service Bus gateway database.
+Creating default container.
+
+
+Processing completed
+Validating input and configuration parameters.
+Installing auto-generated certificate.
+Granting 'Log on as Service' privilege to the run as account.
+Windows Fabric configuration started.
+Running Windows Fabric deployment.
+Windows Fabric starting.
+Service Bus configuration started.
+Updating database.
+Service Bus services starting.
+Updating local registry.
+Successfully added this host to the farm.
+
+
+Processing completed
+Creating a new service for the container.
+Id: 2
+Status: Active
+Host: 
+DatabaseServer: EPKZASTW0008
+DatabaseName: SBMessageContainer02
+ConnectionString: Data Source=EPKZASTW0008;Initial Catalog=SBMessageContainer02;Integrated Security=True;Encrypt=False
+EntitiesCount: 0
+DatabaseSizeInMB: 5.984375
+
+
+Processing completed
+Creating a new service for the container.
+Id: 3
+Status: Active
+Host: 
+DatabaseServer: EPKZASTW0008
+DatabaseName: SBMessageContainer03
+ConnectionString: Data Source=EPKZASTW0008;Initial Catalog=SBMessageContainer03;Integrated Security=True;Encrypt=False
+EntitiesCount: 0
+DatabaseSizeInMB: 5.984375
+
+
+Processing completed
+SubscriptionId: 00000000000000000000000000000000
+State: Active
+Name: ServiceBusDefaultNamespace
+AddressingScheme: Path
+CreatedTime: 4/17/2018 8:27:06 AM
+IssuerName: ServiceBusDefaultNamespace
+IssuerUri: ServiceBusDefaultNamespace
+ManageUsers: aizhuldyz_gabbassova@moscow.epam.com
+DnsEntry: 
+PrimarySymmetricKey: 4mHju1dMnyzaaWXAR5gXlIJ9SohKl9o27Wl3Mh/cg9g=
+SecondarySymmetricKey: 
+
+
+Processing completed
+Endpoint=sb://epkzastw0008.moscow.epam.com/ServiceBusDefaultNamespace;StsEndpoint=https://epkzastw0008.moscow.epam.com:9355/ServiceBusDefaultNamespace;RuntimePort=9354;ManagementPort=9355
+
+Processing completed

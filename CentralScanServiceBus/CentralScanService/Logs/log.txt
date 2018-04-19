@@ -1,0 +1,286 @@
+2018/04/17 14:51:13.244 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/17 14:51:13.362 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/17 14:51:13.435 Running as a console application, creating the console host. 
+2018/04/17 14:51:13.471 Starting up as a console application 
+2018/04/18 18:10:57.352 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 18:10:57.443 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:10:57.498 Running as a console application, creating the console host. 
+2018/04/18 18:10:57.522 Starting up as a console application 
+2018/04/18 18:11:06.891 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 18:14:11.296 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 18:14:11.423 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:14:11.500 Running as a console application, creating the console host. 
+2018/04/18 18:14:11.565 Starting up as a console application 
+2018/04/18 18:14:13.369 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 18:15:25.217 The service threw an unhandled exception System.NullReferenceException: Object reference not set to an instance of an object.
+   at CentralScanService.CentralScanService.PdfDocListen(String saveLocation) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 53
+   at CentralScanService.CentralScanService.<>c__DisplayClass11_0.<Start>b__0() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 72
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/18 18:32:24.672 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 18:32:24.907 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:32:24.989 Running as a console application, creating the console host. 
+2018/04/18 18:32:25.033 Starting up as a console application 
+2018/04/18 18:32:26.944 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 18:33:59.241 The service threw an unhandled exception System.NullReferenceException: Object reference not set to an instance of an object.
+   at CentralScanService.CentralScanService.PdfDocListen(String saveLocation) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 55
+   at CentralScanService.CentralScanService.<>c__DisplayClass11_0.<Start>b__0() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 73
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/18 18:35:29.243 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 18:35:29.359 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:35:29.431 Running as a console application, creating the console host. 
+2018/04/18 18:35:29.471 Starting up as a console application 
+2018/04/18 18:35:31.238 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 18:38:00.339 The service threw an unhandled exception System.NullReferenceException: Object reference not set to an instance of an object.
+   at CentralScanService.CentralScanService.PdfDocListen(String saveLocation) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 55
+   at CentralScanService.CentralScanService.<>c__DisplayClass11_0.<Start>b__0() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 73
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/18 18:43:06.190 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 18:43:06.318 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:43:06.381 Running as a console application, creating the console host. 
+2018/04/18 18:43:06.409 Starting up as a console application 
+2018/04/18 18:43:07.978 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 18:44:52.568 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 18:44:52.683 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:44:52.790 Running as a console application, creating the console host. 
+2018/04/18 18:44:52.829 Starting up as a console application 
+2018/04/18 18:45:00.322 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 18:49:05.659 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 18:49:05.726 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:49:05.764 Running as a console application, creating the console host. 
+2018/04/18 18:49:06.209 Starting up as a console application 
+2018/04/18 18:49:07.064 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 18:50:48.558 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 18:50:48.658 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:50:48.722 Running as a console application, creating the console host. 
+2018/04/18 18:50:48.750 Starting up as a console application 
+2018/04/18 18:50:50.200 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 18:52:55.593 The service threw an unhandled exception System.NullReferenceException: Object reference not set to an instance of an object.
+   at CentralScanService.CentralScanService.PdfDocListen(String saveLocation) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 55
+   at CentralScanService.CentralScanService.<>c__DisplayClass11_0.<Start>b__0() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 73
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/18 19:02:32.590 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 19:02:32.695 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 19:02:32.752 Running as a console application, creating the console host. 
+2018/04/18 19:02:32.779 Starting up as a console application 
+2018/04/18 19:02:36.300 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/18 19:10:18.413 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/18 19:10:18.503 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 19:10:18.556 Running as a console application, creating the console host. 
+2018/04/18 19:10:18.582 Starting up as a console application 
+2018/04/18 19:10:20.950 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 10:24:28.659 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 10:24:28.764 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:24:28.827 Running as a console application, creating the console host. 
+2018/04/19 10:24:28.862 Starting up as a console application 
+2018/04/19 10:24:32.739 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 10:24:33.130 The service threw an unhandled exception System.InvalidOperationException: There is an error in XML document (2, 16). ---> System.Xml.XmlException: 'xlns' is an undeclared prefix. Line 2, position 16.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg, Int32 lineNo, Int32 linePos)
+   at System.Xml.XmlTextReaderImpl.LookupNamespace(NodeData node)
+   at System.Xml.XmlTextReaderImpl.AttributeNamespaceLookup()
+   at System.Xml.XmlTextReaderImpl.ParseAttributes()
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderClientSetting.Read3_ClientSetting()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   at CentralScanService.CentralScanService.SendSettingsToSubs(AutoResetEvent fileChangeEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 76
+   at CentralScanService.CentralScanService.<>c__DisplayClass9_0.<SetupSettingsWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 60
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/19 10:40:58.849 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 10:40:58.938 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:40:59.000 Running as a console application, creating the console host. 
+2018/04/19 10:40:59.041 Starting up as a console application 
+2018/04/19 10:41:01.592 An exception occurred Microsoft.ServiceBus.Messaging.MessagingEntityAlreadyExistsException: The remote server returned an error: (409) Conflict. Entity 'servicebusdefaultnamespace:Topic:clientsettingstopic|ScannerSettings' already exists..TrackingId:5af8a34b-5fa6-4fff-a6d0-424ad3a0e4aa_GEPKZASTW0008_BEPKZASTW0008, Timestamp:4/19/2018 4:41:01 AM ---> System.Net.WebException: The remote server returned an error: (409) Conflict.
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at Microsoft.ServiceBus.Messaging.ServiceBusResourceOperations.CreateOrUpdateAsyncResult`1.<GetAsyncSteps>b__14(CreateOrUpdateAsyncResult`1 thisPtr, IAsyncResult r)
+   at Microsoft.ServiceBus.Messaging.IteratorAsyncResult`1.StepCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at Microsoft.ServiceBus.Common.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at Microsoft.ServiceBus.NamespaceManager.CreateSubscription(SubscriptionDescription description)
+   at CentralScanService.CentralScanService.SetupQueues() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 44
+   at CentralScanService.CentralScanService.Start() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 119
+   at CentralScanService.Program.<>c.<Main>b__0_3(CentralScanService serv) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\Program.cs:line 37
+   at Topshelf.ServiceConfiguratorExtensions.<>c__DisplayClass7`1.<WhenStarted>b__6(T service, HostControl control)
+   at Topshelf.Builders.DelegateServiceBuilder`1.DelegateServiceHandle.Start(HostControl hostControl)
+   at Topshelf.Hosts.ConsoleRunHost.Run()
+2018/04/19 10:42:14.254 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 10:42:14.373 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:42:14.456 Running as a console application, creating the console host. 
+2018/04/19 10:42:14.489 Starting up as a console application 
+2018/04/19 10:42:25.106 An exception occurred Microsoft.ServiceBus.Messaging.MessagingEntityAlreadyExistsException: The remote server returned an error: (409) Conflict. Entity 'servicebusdefaultnamespace:Topic:clientsettingstopic|ScannerSettings' already exists..TrackingId:484ecb22-c8aa-4cc7-b88c-40bd5c20d20a_GEPKZASTW0008_BEPKZASTW0008, Timestamp:4/19/2018 4:42:24 AM ---> System.Net.WebException: The remote server returned an error: (409) Conflict.
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at Microsoft.ServiceBus.Messaging.ServiceBusResourceOperations.CreateOrUpdateAsyncResult`1.<GetAsyncSteps>b__14(CreateOrUpdateAsyncResult`1 thisPtr, IAsyncResult r)
+   at Microsoft.ServiceBus.Messaging.IteratorAsyncResult`1.StepCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at Microsoft.ServiceBus.Common.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at Microsoft.ServiceBus.NamespaceManager.CreateSubscription(SubscriptionDescription description)
+   at CentralScanService.CentralScanService.SetupQueues() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 44
+   at CentralScanService.CentralScanService.Start() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 119
+   at CentralScanService.Program.<>c.<Main>b__0_3(CentralScanService serv) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\Program.cs:line 37
+   at Topshelf.ServiceConfiguratorExtensions.<>c__DisplayClass7`1.<WhenStarted>b__6(T service, HostControl control)
+   at Topshelf.Builders.DelegateServiceBuilder`1.DelegateServiceHandle.Start(HostControl hostControl)
+   at Topshelf.Hosts.ConsoleRunHost.Run()
+2018/04/19 10:44:06.943 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 10:44:07.061 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:44:07.138 Running as a console application, creating the console host. 
+2018/04/19 10:44:07.183 Starting up as a console application 
+2018/04/19 10:44:45.582 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 10:44:52.791 The service threw an unhandled exception System.InvalidOperationException: There is an error in XML document (2, 16). ---> System.Xml.XmlException: 'xlns' is an undeclared prefix. Line 2, position 16.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg, Int32 lineNo, Int32 linePos)
+   at System.Xml.XmlTextReaderImpl.LookupNamespace(NodeData node)
+   at System.Xml.XmlTextReaderImpl.AttributeNamespaceLookup()
+   at System.Xml.XmlTextReaderImpl.ParseAttributes()
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderClientSetting.Read3_ClientSetting()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   at CentralScanService.CentralScanService.SendSettingsToSubs(AutoResetEvent fileChangeEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 77
+   at CentralScanService.CentralScanService.<>c__DisplayClass9_0.<SetupSettingsWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 61
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/19 10:47:25.572 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 10:47:25.635 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:47:25.704 Running as a console application, creating the console host. 
+2018/04/19 10:47:25.729 Starting up as a console application 
+2018/04/19 10:47:30.849 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 10:59:19.545 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 10:59:19.667 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:59:19.744 Running as a console application, creating the console host. 
+2018/04/19 10:59:19.776 Starting up as a console application 
+2018/04/19 10:59:29.201 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 11:07:40.664 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 11:07:40.802 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 11:07:40.879 Running as a console application, creating the console host. 
+2018/04/19 11:07:40.957 Starting up as a console application 
+2018/04/19 11:07:51.244 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 12:07:18.665 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 12:07:18.729 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 12:07:18.773 Running as a console application, creating the console host. 
+2018/04/19 12:07:19.066 Starting up as a console application 
+2018/04/19 12:07:43.090 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 12:08:39.377 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 12:08:39.456 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 12:08:39.516 Running as a console application, creating the console host. 
+2018/04/19 12:08:39.556 Starting up as a console application 
+2018/04/19 12:08:44.953 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 12:12:16.106 The service threw an unhandled exception System.IO.IOException: The process cannot access the file 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\ClientSettings\ClientSettings.xml' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at CentralScanService.CentralScanService.SendSettingsToSubs(AutoResetEvent fileChangeEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 78
+   at CentralScanService.CentralScanService.<>c__DisplayClass9_0.<SetupSettingsWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 62
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/19 12:24:48.403 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 12:24:48.556 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 12:24:48.638 Running as a console application, creating the console host. 
+2018/04/19 12:24:48.726 Starting up as a console application 
+2018/04/19 12:25:00.080 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 12:28:36.856 The service threw an unhandled exception System.IO.IOException: The process cannot access the file 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\ClientSettings\ClientSettings.xml' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at CentralScanService.CentralScanService.SendSettingsToSubs(AutoResetEvent fileChangeEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 79
+   at CentralScanService.CentralScanService.<>c__DisplayClass9_0.<SetupSettingsWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\CentralScanService\CentralScanService.cs:line 63
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/19 12:30:19.659 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 12:30:19.778 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 12:30:19.858 Running as a console application, creating the console host. 
+2018/04/19 12:30:19.919 Starting up as a console application 
+2018/04/19 12:30:30.943 The CentralScanService service is now running, press Control+C to exit. 
+2018/04/19 13:20:49.071 Configuration Result:
+[Success] Name CentralScanService
+[Success] ServiceName CentralScanService 
+2018/04/19 13:20:49.171 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 13:20:49.245 Running as a console application, creating the console host. 
+2018/04/19 13:20:49.286 Starting up as a console application 
+2018/04/19 13:20:51.947 The CentralScanService service is now running, press Control+C to exit. 

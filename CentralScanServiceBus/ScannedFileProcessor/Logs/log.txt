@@ -1,0 +1,202 @@
+2018/04/10 18:58:27.652 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/10 18:58:27.772 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/10 18:58:27.861 Running as a console application, creating the console host. 
+2018/04/10 18:58:27.895 Starting up as a console application 
+2018/04/10 18:58:28.444 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 18:15:12.867 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 18:15:12.942 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:15:12.998 Running as a console application, creating the console host. 
+2018/04/18 18:15:13.029 Starting up as a console application 
+2018/04/18 18:15:15.524 An exception occurred System.InvalidOperationException: There is an error in XML document (2, 2). ---> System.InvalidOperationException: <ArrayOfCustomFolderSettings xmlns=''> was not expected.
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderCustomFolderSettings.Read3_CustomFolderSettings()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   at ScannedFileProcessor.ScannedFileProcessingService.PopulateListFileSystemWatchers() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 103
+   at ScannedFileProcessor.ScannedFileProcessingService.Start() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 231
+   at ScannedFileProcessor.Program.<>c.<Main>b__0_3(ScannedFileProcessingService serv) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\Program.cs:line 36
+   at Topshelf.ServiceConfiguratorExtensions.<>c__DisplayClass7`1.<WhenStarted>b__6(T service, HostControl control)
+   at Topshelf.Builders.DelegateServiceBuilder`1.DelegateServiceHandle.Start(HostControl hostControl)
+   at Topshelf.Hosts.ConsoleRunHost.Run()
+2018/04/18 18:19:30.158 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 18:19:30.277 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:19:30.354 Running as a console application, creating the console host. 
+2018/04/18 18:19:30.390 Starting up as a console application 
+2018/04/18 18:20:24.316 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 18:20:53.653 The service threw an unhandled exception System.IO.FileNotFoundException: Could not find file 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\input_images\scanned\image_16.png'.
+File name: 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\input_images\scanned\image_16.png'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   at System.IO.File.ReadAllBytes(String path)
+   at ScannedFileProcessor.ScannedFileProcessingService.ProcessScannedFile(String inDir, String outDir, String scannedDir, String errorDir, String fileName) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 149
+   at ScannedFileProcessor.ScannedFileProcessingService.WorkProcedure(String inDir, String outDir, String scannedDir, String errorDir, ManualResetEvent stopWorkEvent, AutoResetEvent newFileEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 81
+   at ScannedFileProcessor.ScannedFileProcessingService.<>c__DisplayClass6_0.<StartFileSystemWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 60
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/18 18:32:57.418 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 18:32:57.546 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:32:57.641 Running as a console application, creating the console host. 
+2018/04/18 18:32:57.696 Starting up as a console application 
+2018/04/18 18:33:05.730 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 18:33:49.204 The service threw an unhandled exception System.IO.FileNotFoundException: Could not find file 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\input_images\scanned\image_16.png'.
+File name: 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\input_images\scanned\image_16.png'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   at System.IO.File.ReadAllBytes(String path)
+   at ScannedFileProcessor.ScannedFileProcessingService.ProcessScannedFile(String inDir, String outDir, String scannedDir, String errorDir, String fileName) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 149
+   at ScannedFileProcessor.ScannedFileProcessingService.WorkProcedure(String inDir, String outDir, String scannedDir, String errorDir, ManualResetEvent stopWorkEvent, AutoResetEvent newFileEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 81
+   at ScannedFileProcessor.ScannedFileProcessingService.<>c__DisplayClass6_0.<StartFileSystemWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 60
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/18 18:44:08.634 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 18:44:08.739 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:44:08.794 Running as a console application, creating the console host. 
+2018/04/18 18:44:08.839 Starting up as a console application 
+2018/04/18 18:44:11.417 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 18:44:59.557 The service threw an unhandled exception System.IO.FileNotFoundException: Could not find file 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\input_images\scanned\image_27.jpg'.
+File name: 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\input_images\scanned\image_27.jpg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   at System.IO.File.ReadAllBytes(String path)
+   at ScannedFileProcessor.ScannedFileProcessingService.ProcessScannedFile(String inDir, String outDir, String scannedDir, String errorDir, String fileName) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 149
+   at ScannedFileProcessor.ScannedFileProcessingService.WorkProcedure(String inDir, String outDir, String scannedDir, String errorDir, ManualResetEvent stopWorkEvent, AutoResetEvent newFileEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 81
+   at ScannedFileProcessor.ScannedFileProcessingService.<>c__DisplayClass6_0.<StartFileSystemWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 60
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/18 18:46:11.026 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 18:46:11.120 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:46:11.180 Running as a console application, creating the console host. 
+2018/04/18 18:46:11.210 Starting up as a console application 
+2018/04/18 18:46:14.056 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 18:48:19.901 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 18:48:19.996 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:48:20.066 Running as a console application, creating the console host. 
+2018/04/18 18:48:20.099 Starting up as a console application 
+2018/04/18 18:48:23.232 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 18:50:30.495 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 18:50:30.615 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 18:50:30.686 Running as a console application, creating the console host. 
+2018/04/18 18:50:30.720 Starting up as a console application 
+2018/04/18 18:50:32.916 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 19:02:42.448 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 19:02:42.552 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 19:02:42.620 Running as a console application, creating the console host. 
+2018/04/18 19:02:42.656 Starting up as a console application 
+2018/04/18 19:02:45.854 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 19:03:35.470 The service threw an unhandled exception System.IO.FileNotFoundException: Could not find file 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\input_images\scanned\image_1.pdf'.
+File name: 'C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\input_images\scanned\image_1.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   at System.IO.File.ReadAllBytes(String path)
+   at ScannedFileProcessor.ScannedFileProcessingService.ProcessScannedFile(String inDir, String outDir, String scannedDir, String errorDir, String fileName) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 149
+   at ScannedFileProcessor.ScannedFileProcessingService.WorkProcedure(String inDir, String outDir, String scannedDir, String errorDir, ManualResetEvent stopWorkEvent, AutoResetEvent newFileEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 81
+   at ScannedFileProcessor.ScannedFileProcessingService.<>c__DisplayClass6_0.<StartFileSystemWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\QtoA\ScannedFileProcessor\ScannedFileProcessingService.cs:line 60
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/04/18 19:07:24.357 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 19:07:24.487 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 19:07:24.567 Running as a console application, creating the console host. 
+2018/04/18 19:07:25.314 Starting up as a console application 
+2018/04/18 19:07:28.322 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/18 19:09:57.753 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/18 19:09:57.856 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/18 19:09:57.924 Running as a console application, creating the console host. 
+2018/04/18 19:09:59.562 Starting up as a console application 
+2018/04/18 19:10:01.170 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/19 10:24:45.194 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/19 10:24:45.278 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:24:45.334 Running as a console application, creating the console host. 
+2018/04/19 10:24:45.718 Starting up as a console application 
+2018/04/19 10:24:46.922 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/19 10:47:07.146 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/19 10:47:07.270 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:47:07.350 Running as a console application, creating the console host. 
+2018/04/19 10:47:07.393 Starting up as a console application 
+2018/04/19 10:47:09.109 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/19 10:59:57.654 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/19 10:59:57.750 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 10:59:57.821 Running as a console application, creating the console host. 
+2018/04/19 10:59:58.373 Starting up as a console application 
+2018/04/19 11:00:00.000 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/19 11:07:58.032 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/19 11:07:58.120 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 11:07:58.196 Running as a console application, creating the console host. 
+2018/04/19 11:07:58.249 Starting up as a console application 
+2018/04/19 11:07:59.636 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/19 12:09:05.315 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/19 12:09:05.407 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 12:09:05.465 Running as a console application, creating the console host. 
+2018/04/19 12:09:05.794 Starting up as a console application 
+2018/04/19 12:09:08.611 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/19 12:25:31.627 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/19 12:25:31.751 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 12:25:31.830 Running as a console application, creating the console host. 
+2018/04/19 12:25:31.854 Starting up as a console application 
+2018/04/19 12:26:03.451 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/04/19 12:30:32.110 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/19 12:30:32.230 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 12:30:32.280 Running as a console application, creating the console host. 
+2018/04/19 12:30:32.397 Starting up as a console application 
+2018/04/19 13:20:58.792 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/04/19 13:20:58.870 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/04/19 13:20:58.922 Running as a console application, creating the console host. 
+2018/04/19 13:20:58.943 Starting up as a console application 
+2018/04/19 13:21:00.224 The ScannedFileProcessor service is now running, press Control+C to exit. 
