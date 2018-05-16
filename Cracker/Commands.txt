@@ -1,0 +1,3 @@
+//cd to crackme.exe location
+ildasm CrackMe.exe /output:CrackMe.il
+ilasm CrackMe /dll /pdb /debug
