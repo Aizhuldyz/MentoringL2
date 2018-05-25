@@ -1,0 +1,6 @@
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\PerformanceTask1\PerformanceTask1\bin\Debug\PerformanceTask1.exe.config
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\PerformanceTask1\PerformanceTask1\bin\Debug\PerformanceTask1.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\PerformanceTask1\PerformanceTask1\bin\Debug\PerformanceTask1.pdb
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\PerformanceTask1\PerformanceTask1\obj\Debug\PerformanceTask1.csprojResolveAssemblyReference.cache
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\PerformanceTask1\PerformanceTask1\obj\Debug\PerformanceTask1.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\PerformanceTask1\PerformanceTask1\obj\Debug\PerformanceTask1.pdb
