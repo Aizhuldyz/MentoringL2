@@ -1,0 +1,11 @@
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\mainwindow.baml
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\mainwindow.g.cs
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\MyCalculatorv1_MarkupCompile.cache
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\MyCalculatorv1.g.resources
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\MyCalculatorv1.Properties.Resources.resources
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\MyCalculator.csproj.GenerateResource.Cache
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\bin\Debug\MyCalculatorv1.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\bin\Debug\MyCalculatorv1.pdb
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\MyCalculatorv1.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\MyCalculatorv1.pdb
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\DumpHomework\MyCalculator\obj\Debug\MyCalculator.csprojResolveAssemblyReference.cache
