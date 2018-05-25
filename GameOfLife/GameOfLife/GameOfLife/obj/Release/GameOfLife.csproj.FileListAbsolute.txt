@@ -1,0 +1,17 @@
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\bin\Release\GameOfLife.exe.config
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\bin\Release\ad1.jpg
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\bin\Release\ad2.jpg
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\bin\Release\ad3.jpg
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\bin\Release\GameOfLife.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\bin\Release\GameOfLife.pdb
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\GameOfLife.csprojResolveAssemblyReference.cache
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\MainWindow.baml
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\MainWindow.g.cs
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\App.g.cs
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\GameOfLife_Content.g.cs
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\GameOfLife_MarkupCompile.cache
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\GameOfLife.g.resources
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\GameOfLife.Properties.Resources.resources
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\GameOfLife.csproj.GenerateResource.Cache
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\GameOfLife.exe
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\GameOfLife\GameOfLife\GameOfLife\obj\Release\GameOfLife.pdb
