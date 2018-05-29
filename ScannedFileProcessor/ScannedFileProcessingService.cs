@@ -7,13 +7,21 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
+using AOPLogger;
+using Autofac.Extras.DynamicProxy2;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.Rendering;
 
 namespace ScannedFileProcessor
 {
+    public interface IProcessScannedFiles
+    {
+        void Start();
+        void Stop();
+    }
     
-    public class ScannedFileProcessingService
+   
+    public class ScannedFileProcessingService : IProcessScannedFiles
     {
         private List<CustomFolderSettings> _foldersWatched;
         private readonly List<FileSystemWatcher> _fileSystemWatchers;
@@ -27,7 +35,9 @@ namespace ScannedFileProcessor
             _workerThreads = new List<Thread>();
             _stopEvent = new ManualResetEvent(false);
         }
-        private void StartFileSystemWatcher()
+
+        [CRLogger]
+        public void StartFileSystemWatcher()
         {
             foreach (var customFolder in _foldersWatched)
             {
@@ -65,6 +75,7 @@ namespace ScannedFileProcessor
             }
         }
 
+        [CRLogger]
         public void WorkProcedure(string inDir, string outDir, string scannedDir, string errorDir, ManualResetEvent stopWorkEvent,
             AutoResetEvent newFileEvent)
         {
@@ -87,12 +98,14 @@ namespace ScannedFileProcessor
             while (WaitHandle.WaitAny(new WaitHandle[] { stopWorkEvent, newFileEvent }, 1000) != 0);
         }
 
+        [CRLogger]
         private void FileSWatch_Created(object sender, FileSystemEventArgs e, AutoResetEvent newFileEvent)
         {
             newFileEvent.Set();
         }
 
-        private void PopulateListFileSystemWatchers()
+        [CRLogger]
+        public void PopulateListFileSystemWatchers()
         {
             var fileNameXml = ConfigurationManager.AppSettings["XMLFileFolderSettings"];
 
@@ -107,7 +120,8 @@ namespace ScannedFileProcessor
             _foldersWatched = obj as List<CustomFolderSettings>;
         }
 
-        private void ProcessScannedFile(string inDir, string outDir, string scannedDir, string errorDir, string fileName)
+        [CRLogger]
+        public void ProcessScannedFile(string inDir, string outDir, string scannedDir, string errorDir, string fileName)
         {
             Match match = Regex.Match(fileName, @"([A-Za-z]+)_([0-9]+)\.(jpg|png)$");
             if (!match.Success)
@@ -181,7 +195,7 @@ namespace ScannedFileProcessor
             return false;
         }
 
-
+        [CRLogger]
         public bool MigraDocSample(string indir, string outdir, List<string> files, int tryCount)
         {
             try
@@ -212,12 +226,14 @@ namespace ScannedFileProcessor
             }
         }
 
+        [CRLogger]
         public void Start()
         {
             PopulateListFileSystemWatchers();
             StartFileSystemWatcher();
         }
 
+        [CRLogger]
         public void Stop()
         {
             _stopEvent.Set();

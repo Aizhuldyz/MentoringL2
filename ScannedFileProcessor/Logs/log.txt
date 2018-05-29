@@ -5,3 +5,170 @@
 2018/04/10 18:58:27.861 Running as a console application, creating the console host. 
 2018/04/10 18:58:27.895 Starting up as a console application 
 2018/04/10 18:58:28.444 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 18:43:56.287 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 18:43:56.386 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 18:43:56.441 Running as a console application, creating the console host. 
+2018/05/28 18:43:56.488 Starting up as a console application 
+2018/05/28 18:43:56.932 An exception occurred System.InvalidOperationException: There is an error in XML document (2, 4). ---> System.InvalidOperationException: <CustomFolderSettings xmlns=''> was not expected.
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_ArrayOfCustomFolderSettings()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   at ScannedFileProcessor.ScannedFileProcessingService.PopulateListFileSystemWatchers() in C:\Users\aizhuldyz_gabbassova\Downloads\ScannedFileProcessor\ScannedFileProcessingService.cs:line 109
+   at ScannedFileProcessor.ScannedFileProcessingService.Start() in C:\Users\aizhuldyz_gabbassova\Downloads\ScannedFileProcessor\ScannedFileProcessingService.cs:line 222
+   at Castle.Proxies.Invocations.IProcessScannedFiles_Start.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at AOPLogger.DPLogger.Intercept(IInvocation invocation) in C:\Users\aizhuldyz_gabbassova\Downloads\AOPLogger\DPLogger.cs:line 22
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IProcessScannedFilesProxy.Start()
+   at ScannedFileProcessor.Program.<>c.<Main>b__0_3(IProcessScannedFiles serv) in C:\Users\aizhuldyz_gabbassova\Downloads\ScannedFileProcessor\Program.cs:line 39
+   at Topshelf.ServiceConfiguratorExtensions.<>c__DisplayClass7`1.<WhenStarted>b__6(T service, HostControl control)
+   at Topshelf.Builders.DelegateServiceBuilder`1.DelegateServiceHandle.Start(HostControl hostControl)
+   at Topshelf.Hosts.ConsoleRunHost.Run()
+2018/05/28 18:45:19.210 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 18:45:19.311 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 18:45:19.372 Running as a console application, creating the console host. 
+2018/05/28 18:45:19.402 Starting up as a console application 
+2018/05/28 18:45:19.781 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 18:49:50.108 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 18:49:50.211 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 18:49:50.282 Running as a console application, creating the console host. 
+2018/05/28 18:49:50.310 Starting up as a console application 
+2018/05/28 18:49:50.580 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 18:50:18.444 The service threw an unhandled exception System.IO.IOException: Cannot create a file when that file already exists.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.__Error.WinIOError()
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at ScannedFileProcessor.ScannedFileProcessingService.ProcessScannedFile(String inDir, String outDir, String scannedDir, String errorDir, String fileName) in C:\Users\aizhuldyz_gabbassova\Downloads\ScannedFileProcessor\ScannedFileProcessingService.cs:line 162
+   at ScannedFileProcessor.ScannedFileProcessingService.WorkProcedure(String inDir, String outDir, String scannedDir, String errorDir, ManualResetEvent stopWorkEvent, AutoResetEvent newFileEvent) in C:\Users\aizhuldyz_gabbassova\Downloads\ScannedFileProcessor\ScannedFileProcessingService.cs:line 97
+   at ScannedFileProcessor.ScannedFileProcessingService.<>c__DisplayClass5_0.<StartFileSystemWatcher>b__1() in C:\Users\aizhuldyz_gabbassova\Downloads\ScannedFileProcessor\ScannedFileProcessingService.cs:line 75
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2018/05/28 18:51:50.537 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 18:51:50.662 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 18:51:50.744 Running as a console application, creating the console host. 
+2018/05/28 18:51:50.804 Starting up as a console application 
+2018/05/28 18:51:51.154 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 19:23:07.822 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 19:23:07.928 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 19:23:07.983 Running as a console application, creating the console host. 
+2018/05/28 19:23:08.011 Starting up as a console application 
+2018/05/28 19:23:57.355 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 19:35:59.038 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 19:35:59.124 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 19:35:59.180 Running as a console application, creating the console host. 
+2018/05/28 19:35:59.206 Starting up as a console application 
+2018/05/28 19:36:07.805 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 19:41:44.647 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 19:41:44.772 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 19:41:44.849 Running as a console application, creating the console host. 
+2018/05/28 19:41:44.901 Starting up as a console application 
+2018/05/28 19:41:45.265 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 19:45:58.162 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 19:45:58.276 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 19:45:58.335 Running as a console application, creating the console host. 
+2018/05/28 19:45:58.387 Starting up as a console application 
+2018/05/28 19:45:58.776 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 22:00:16.039 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 22:00:16.156 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 22:00:16.232 Running as a console application, creating the console host. 
+2018/05/28 22:00:16.338 Starting up as a console application 
+2018/05/28 22:00:16.576 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 22:07:19.849 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 22:07:19.926 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 22:07:19.989 Running as a console application, creating the console host. 
+2018/05/28 22:07:20.016 Starting up as a console application 
+2018/05/28 22:07:38.899 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 22:13:34.585 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 22:13:34.689 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 22:13:34.745 Running as a console application, creating the console host. 
+2018/05/28 22:13:34.773 Starting up as a console application 
+2018/05/28 22:13:35.572 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/28 22:18:01.151 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/28 22:18:01.254 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/28 22:18:01.318 Running as a console application, creating the console host. 
+2018/05/28 22:18:01.348 Starting up as a console application 
+2018/05/28 22:18:02.062 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/29 10:12:58.051 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/29 10:12:58.142 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/29 10:12:58.206 Running as a console application, creating the console host. 
+2018/05/29 10:12:58.240 Starting up as a console application 
+2018/05/29 10:13:52.222 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/29 10:17:29.770 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/29 10:17:29.860 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/29 10:17:29.940 Running as a console application, creating the console host. 
+2018/05/29 10:17:29.971 Starting up as a console application 
+2018/05/29 10:17:30.974 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/29 10:18:26.787 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/29 10:18:26.873 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/29 10:18:26.957 Running as a console application, creating the console host. 
+2018/05/29 10:18:26.998 Starting up as a console application 
+2018/05/29 10:19:11.979 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/29 10:32:00.537 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/29 10:32:00.654 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/29 10:32:00.732 Running as a console application, creating the console host. 
+2018/05/29 10:32:00.766 Starting up as a console application 
+2018/05/29 10:35:10.304 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/29 10:35:10.384 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/29 10:35:10.458 Running as a console application, creating the console host. 
+2018/05/29 10:35:10.496 Starting up as a console application 
+2018/05/29 10:37:44.864 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/29 10:37:44.947 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/29 10:37:45.009 Running as a console application, creating the console host. 
+2018/05/29 10:37:45.045 Starting up as a console application 
+2018/05/29 10:39:29.334 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/29 10:51:13.812 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/29 10:51:13.893 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/29 10:51:13.944 Running as a console application, creating the console host. 
+2018/05/29 10:51:13.978 Starting up as a console application 
+2018/05/29 10:51:32.384 The ScannedFileProcessor service is now running, press Control+C to exit. 
+2018/05/29 11:14:51.474 Configuration Result:
+[Success] Name ScannedFileProcessor
+[Success] ServiceName ScannedFileProcessor 
+2018/05/29 11:14:51.555 Topshelf v3.3.154.0, .NET Framework v4.0.30319.42000 
+2018/05/29 11:14:51.619 Running as a console application, creating the console host. 
+2018/05/29 11:14:51.659 Starting up as a console application 
+2018/05/29 11:14:52.345 The ScannedFileProcessor service is now running, press Control+C to exit. 
