@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>PostSharp.Patterns.Diagnostics.Backends.NLog</name>
+  </assembly>
+  <members>
+    <member name="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend">
+      <summary>
+            Logging back-end for NLog.
+            </summary>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.#ctor">
+      <summary>
+            Initializes a new <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend" />.
+            </summary>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.#ctor(NLog.LogFactory)">
+      <summary>
+            Initializes a new <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend" /> and specifies the target <see cref="P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.LogFactory" />.
+            </summary>
+      <param name="logFactory">The <see cref="P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.LogFactory" /> that should be used to create the target loggers, or <c>null</c> to use the globally-shared logger.</param>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.CreateRecordBuilder">
+      <summary>
+            Creates a new <see cref="T:PostSharp.Patterns.Diagnostics.RecordBuilders.LogRecordBuilder" />.
+            </summary>
+      <returns>A new <see cref="T:PostSharp.Patterns.Diagnostics.RecordBuilders.LogRecordBuilder" />.</returns>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.CreateTypeSource(PostSharp.Patterns.Diagnostics.LoggingNamespaceSource,System.Type)">
+      <summary>
+            Creates <see cref="T:PostSharp.Patterns.Diagnostics.LoggingTypeSource" /> for the given role and type.
+            </summary>
+      <param name="parent">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>parent</parameter>
+            <parameter>M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.CreateTypeSource(PostSharp.Patterns.Diagnostics.LoggingNamespaceSource,System.Type)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="type">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>type</parameter>
+            <parameter>M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.CreateTypeSource(PostSharp.Patterns.Diagnostics.LoggingNamespaceSource,System.Type)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.CreateTypeSource(PostSharp.Patterns.Diagnostics.LoggingNamespaceSource,System.Type)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.GetTextBackendOptions">
+      <summary>
+            Gets the options.
+            </summary>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.GetTextBackendOptions</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.LogFactory">
+      <summary>
+            Gets the <see cref="P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.LogFactory" /> passed to the constructor of the current <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend" />, or <c>null</c> if no logger was passed during the instantiation of the current <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend" />.
+            </summary>
+    </member>
+    <member name="P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend.Options">
+      <summary>
+            Gets the back-end options.
+            </summary>
+    </member>
+    <member name="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackendOptions">
+      <summary>
+            Options for <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend" />.
+            </summary>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackendOptions.#ctor">
+      <summary>
+            Initializes a new <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackendOptions" />.
+            </summary>
+    </member>
+    <member name="P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackendOptions.GetLogger">
+      <summary>
+            Function mapping an <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource" /> to an NLog <c>Logger</c>.
+            The default behavior is to call <c>typeSource.Backend.LogFactory?.GetLogger( typeSource.Role ) ?? LogManager.GetLogger( typeSource.Role )</c>.
+            </summary>
+    </member>
+    <member name="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource">
+      <summary>
+            The <see cref="T:PostSharp.Patterns.Diagnostics.LoggingTypeSource" /> for <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend" />.
+            </summary>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource.#ctor(PostSharp.Patterns.Diagnostics.LoggingNamespaceSource,System.Type)">
+      <summary>
+            Initializes a new <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource" />.
+            </summary>
+      <param name="parent">The parent <see cref="T:PostSharp.Patterns.Diagnostics.LoggingNamespaceSource" />.</param>
+      <param name="type">The <see cref="T:System.Type" /> being logged.</param>
+    </member>
+    <member name="P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource.Backend">
+      <summary>
+            Gets the parent <see cref="!:SerilogLoggingBackend" />.
+            </summary>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource.IsBackendEnabled(PostSharp.Patterns.Diagnostics.LogLevel)">
+      <summary>
+            Checks whether logging is enabled in the back-end for the given level.
+            </summary>
+      <param name="level">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>level</parameter>
+            <parameter>M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource.IsBackendEnabled(PostSharp.Patterns.Diagnostics.LogLevel)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource.IsBackendEnabled(PostSharp.Patterns.Diagnostics.LogLevel)</parameter>
+          </include>
+        </markup>
+      </returns>
+    </member>
+    <member name="P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource.Logger">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingTypeSource.Logger</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLogRecordBuilder">
+      <summary>
+        <see cref="T:PostSharp.Patterns.Diagnostics.RecordBuilders.LogRecordBuilder" /> for <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend" />.
+            </summary>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLogRecordBuilder.#ctor(PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLoggingBackend)">
+      <summary>
+            Initializes a new <see cref="T:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLogRecordBuilder" />.
+            </summary>
+      <param name="backend"></param>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLogRecordBuilder.EmitRecord">
+      <summary>
+            Emits the record. Invoked by the <see cref="M:PostSharp.Patterns.Diagnostics.RecordBuilders.LogRecordBuilder.Complete" /> method.
+            </summary>
+    </member>
+    <member name="M:PostSharp.Patterns.Diagnostics.Backends.NLog.NLogLogRecordBuilder.Write(PostSharp.Patterns.Formatters.UnsafeString)">
+      <summary>
+            Writes the final message to the back-end.
+            </summary>
+      <param name="message">The final message.</param>
+    </member>
+  </members>
+</doc>
