@@ -1,0 +1,5 @@
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\XmlLib\XmlLib\bin\Debug\XmlLib.dll
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\XmlLib\XmlLib\bin\Debug\XmlLib.pdb
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\XmlLib\XmlLib\obj\Debug\XmlLib.csprojResolveAssemblyReference.cache
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\XmlLib\XmlLib\obj\Debug\XmlLib.dll
+C:\Users\aizhuldyz_gabbassova\Source\Repos\MentoringL2\XmlLib\XmlLib\obj\Debug\XmlLib.pdb
